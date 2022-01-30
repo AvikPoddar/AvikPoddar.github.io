@@ -1,2 +1,2 @@
-# avik_p.github.io
+# AvikPoddar.github.io
 BITS Open Source Software Assignment
