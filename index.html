@@ -14,16 +14,70 @@ p1
   padding:0;
   font-size:13px;
 }
+p2
+{
+  margin:0;
+  padding:0;
+  font-size:15px;
+}
 table, th, td {
   border:1px solid black;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
 <title>Avik Poddar-Profile</title>
 </style>
 </head>
 <body>
 
-<h1 style="margin-bottom:0;">Avik Poddar</h1>
-<h3 style="margin : 0; padding-top:0;">Senior Software Engineer, Tech M</h3>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<h1 style="margin-bottom:0; text-align:center">Avik Poddar</h1>
+<h3 style="margin : 0; padding-top:0; text-align:center">Senior Software Engineer, Tech M</h3>
+
+<a href="https://www.linkedin.com/in/avik-poddar-97aa61128/">
+<img alt="LinkedIn" src="/AvikPoddar.github.io/docs/assets/32px-Linkedin_icon.jpg" class="center">
+</a>
+
 <br>
 <p><b>About me :-</b></p>
 <br>
@@ -82,6 +136,86 @@ data making it business ready for the customers to act upon.</p>
   <li>Microsoft Office</li>
   <li>Python</li>
 </ul>
+<br>
+<br>
+<h2 style="color:blue;">Certifications</h2>
+<ol>
+  <li>Microsoft Certified: DP-900 Azure Data Fundamentals</li>
+  <li>Microsoft Certified: AI-900 Azure AI Fundamentals</li>
+</ol>
+<br>
+<br>
+<h2 style="color:blue;">Projects</h2>
+<h3 style="margin-bottom:1;"><b>1. Tableau Developer</b></h3>
+<p2><b>Client :-</b></p2>
+<p>American corporation that supplies
+equipment, services and software for the manufacture of semiconductor
+(integrated circuit) chips for electronics, flat panel displays for computers,
+smartphones, televisions, and solar products,</p>
+<br>
+<p1><b><u>September 2021 - Present</b></u></p1>
+<br>
+<br>
+<p2><b>Responsibilities :-</b></p2>
+<ul>
+  <li>Tableau Workbook and Published data source development</li>
+  <li>Requirement Gathering and analysis</li>
+  <li>Data Cleansing using Python Script and Tableau Prep Tool</li>
+  <li>Preparing Scripts to automate various Tableau Server interactions</li>
+</ul>
+<br>
+<br>
+<h3 style="margin-bottom:1;"><b>2. Data Visualization Development</b></h3>
+<p2><b>Client :-</b></p2>
+<p>American
+multinational company that specializes in consumer electronics, software &
+online services,</p>
+<br>
+<p1><b><u>March 2021 - September 2021</b></u></p1>
+<br>
+<br>
+<p2><b>Responsibilities :-</b></p2>
+<ul>
+  <li>SAP Business Objects Universe creation. Design and development
+of a new universe based on the business requirement.</li>
+  <li>Creating WEBI reports to capture important metrics</li>
+  <li>Creating data pipeline to Extract Transform and Load data from
+Oracle back end to intermediary Kafka Topic to Teradata.</li>
+  <li>Enhancement of pre-existing WEBI Reports.</li>
+  <li>Making JSON documents to be consumed by the data pipeline
+tool.</li>
+  <li>Making table schema using Teradata SQL.</li>
+</ul>
+<br>
+<br>
+<h3 style="margin-bottom:1;"><b>3. Production Support</b></h3>
+<p2><b>Client :-</b></p2>
+<p>American corporation that supplies
+equipment, services and software for the manufacture of semiconductor
+(integrated circuit) chips for electronics, flat panel displays for computers,
+smartphones, televisions, and solar products,</p>
+<br>
+<p1><b><u>October 2017 - March 2021</b></u></p1>
+<br>
+<br>
+<p2><b>Responsibilities :-</b></p2>
+<ul>
+  <li>SAP Business Objects Reports creation and enhancement, to
+enable clients and customers to make robust and data driven
+decisions.</li>
+  <li>Tableau Dashboard enhancement and support. Extending
+assistance to customers during their custom dashboard,
+datastore development.</li>
+</ul>
+<br>
+<br>
+<h2 style="color:blue;">Awards</h2>
+<ol>
+  <li>Associate of the Quarter(Cognizant)</li>
+  <li>Exemplary Support(Cognizant)</li>
+</ol>
+
+<h1 style="margin-bottom:0; text-align:center">~ END ~</h1>
 
 </body>
 </html>
